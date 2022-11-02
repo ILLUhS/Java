@@ -14,3 +14,19 @@ public class DRoot {
     return sum;
   }
 }
+
+// Number of People in the Bus
+
+import java.util.ArrayList;
+
+class Metro {
+
+  public static int countPassengers(ArrayList<int[]> stops) {
+    int s = stops.size();
+    int h = 0;
+    for(int i = 0; i < s; i++){
+      h += (stops.get(i))[0] - (stops.get(i))[1];
+    }
+    return h;
+  }
+}
